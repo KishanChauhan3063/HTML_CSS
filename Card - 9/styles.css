@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	padding: 10px;
+}
+
+.card-section {
+	width: 100%;
+	/* border:1px solid black; */
+	height: auto;
+	display: flex;
+	padding: 0px 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #FAFCFD;
+}
+
+.card {
+	display: flex;
+	width: 300px;
+	min-height: 200px;
+	/* background: conic-gradient(#FFFFFF 0deg 90deg, #fc0909 0deg 269deg, #fff 270deg 360deg); */
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	margin: 10px;
+	padding: 10px;
+}
+
+.card:nth-child(6) {
+	background: conic-gradient(#FFFFFF 0deg 90deg, #F8FAFB 0deg 269deg, #fff 270deg 360deg);
+}
+
+.card:hover {
+	scale: 1.05;
+	box-shadow: 1px 1px 15px rgba(68, 77, 136, 0.3);
+}
+
+.card-img>img {
+	height: 80px;
+	width: auto;
+	padding: 11px;
+	margin-top: 10px;
+	border-radius: 50%;
+}
+
+.card-detail {
+	padding: 20px 10px;
+}
+
+.card-detail .card-title {
+	margin: 0px !important;
+	font-weight: bolder;
+	font-size: 17pt;
+}
+
+.card-detail .card-small-title {
+	margin: 5px 0px !important;
+	font-weight: 700;
+	font-size: 10pt;
+	width: 100%;
+	color: #6A6A6A;
+}
+
+.card-detail .card-description {
+	font-size: 11pt;
+	font-weight: 100 !important;
+}
+
+.button {
+	display: flex;
+	padding: 5px 20px;
+	background-color: #fff;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 125px;
+}
+
+.button1 {
+	display: flex;
+	padding: 5px 20px;
+	background-color: #fff;
+	color: black;
+	border-radius: 5px;
+	margin-top: -33.40px;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.button1:hover {
+	background-color: black;
+	color: white;
+}
+
+
+@media (max-width:1600px) {
+	.card {
+		width: 350px !important;
+	}
+}
+
+
+@media (max-width:1024px) {
+	.card {
+		width: 350px !important;
+	}
+
+	/* body{ background:red;} */
+}
+
+@media (max-width:767px) {
+	.card {
+		width: 400px !important;
+	}
+
+	/* body{ background:green;} */
+}
+
+@media (max-width:480px) {
+	.card {
+		width: 300px !important;
+	}
+
+	/* body{ background:blue;} */
+}
